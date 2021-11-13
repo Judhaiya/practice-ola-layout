@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css
 ">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
 </head>
 <body>
     <!--nav section-->
@@ -32,11 +35,11 @@
   <!--services section-->  
   <section class="service-container">
     <div class="service-section-wrapper">
-        <div class="max-container">
+        <div class="max-container servicemax">
        <h3 class="service-title">A car for every occassion</h3>
        <p class="caption">Ola offers city taxis, inter-city cabs, and local cabs at hourly packages</p>
        <div class="card-wrapper">
-           <div class="card">
+           <div class="card one">
                <div class="img-wrapper">
                    <div class="car-svg">
               <i class="fas fa-car-side"></i>
@@ -52,7 +55,7 @@
                </div>
                </div>
            </div>
-           <div class="card">
+           <div class="card two" data-aos="fade-left">
             <div class="img-wrapper">
              <div class="car-svg"><i class="fas fa-car-side"></i></div>
             </div>
@@ -67,7 +70,7 @@
             </div>
             </div>
         </div>
-        <div class="card">
+        <div class="card three" data-aos="fade-right">
             <div class="img-wrapper">
             <div class="car-svg"><i class="fas fa-car-side"></i></div>
             </div>
@@ -85,6 +88,12 @@
        </div>
     </div>
 </section>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+    delay:300
+  });
+</script>
 
 </body>
 </html>
